@@ -3,22 +3,16 @@
     background-color: rgb(221, 60, 60);
 }
 
+.corners{
+    border-radius: 10px;
+    /*OBS bottom-radius on header*/
+    /*articles i menyn*/
+}
+
 .margin{
     margin: 20px auto 0px auto;
 }
 
-.maincontainer{
-    display:grid;
-    min-height: 100vh;
-    grid-template-rows: 200px auto 200px 200px 200px 200px;
-    grid-template-areas:
-    "hd"
-    "img"
-    "sdl"
-    "tbl"
-    "nws"
-    "spn";
-}
 
 .header{
     grid-area: hd;
@@ -30,10 +24,12 @@
     grid-template-areas:
     "lg tm"
     "lg mu";
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .logo{
-    padding-top: 5px;
+    padding-top: 0.313rem;
     grid-area: lg;
     height: 100%;
     background: none;
@@ -45,9 +41,6 @@
     height: 75px;
     width: 75px;
     margin: auto 10px auto 10px;
-    color: white;
-    font-size: 30px;
-    text-align: center;
 }
 
 .menu{
@@ -57,19 +50,42 @@
     width: 75px;
     margin: auto 10px auto 10px;
     color: white;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .navtext{
     background: none;
+    color: white;
+    font-size: 1.563rem;
+    text-align: center;
 }
 
-.teamtext{
-    padding-top: 3px;
+.teampadding{
+    padding-top: 0.438rem;
 }
 
-.menutext{
-    padding-top: 17px;
+.menupadding{
+    padding-top: 1.063rem;
+}
+
+
+
+
+
+
+
+/*huvudsida*/
+.maincontainer{
+    display:grid;
+    min-height: 100vh;
+    grid-template-rows: 200px auto 200px 200px 200px 200px;
+    grid-template-areas:
+    "hd"
+    "img"
+    "sdl"
+    "tbl"
+    "nws"
+    "spn";
 }
 
 .teampicture{
@@ -91,30 +107,60 @@
     grid-area: tbl;
     width: 90%;
     height: 90%;
-    border-collapse: collapse;
-    color: white;
+    color: black;
+}
+
+.underlineremove{
+    text-decoration: none;
 }
 
 th, td {
-    padding: 8px;
-    border: 2px solid white;
-    text-align: left;
-    
+    padding: 0.5rem;
+    border: 1px solid black;
+    text-align: center;
 }
 
 tr:nth-child(even){
-    background-color: rgb(206, 59, 59);
+    /*background-color: rgb(206, 59, 59);*/
+    background-color: lightgray;
 }
 
 tr:nth-child(odd){
-    background: rgb(255, 71, 71);
+    /*background: rgb(255, 71, 71);*/
+    background-color: rgb(226, 226, 226);
+}
+
+.firstrow{
+    width: 65%;
+    text-align: left;
 }
 
 .news{
     grid-area: nws;
-    background: lightgray;
+    background: rgb(255, 71, 71);
     width: 90%;
     height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.0625rem solid black;
+}
+
+.article{
+    width: 90%;
+    background: white;
+    color: black;
+    border-radius: 0.313rem;
+    font-size: 1.125rem;
+    padding: 0.625rem;
+    text-align: center;
+}
+
+.newstitle{
+    background: none;
+    color: white;
+    font-size: 1.563rem;
 }
 
 .sponsors{
@@ -122,3 +168,52 @@ tr:nth-child(odd){
     width: 90%;
     margin: 20px auto 20px auto;
 }
+
+
+
+
+
+
+
+/*tabell*/
+.tabellcontainer{
+    display:grid;
+    min-height: 100vh;
+    grid-template-rows: 200px auto 200px;
+    grid-template-areas:
+    "hd"
+    "tb"
+    "spn"
+;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*frågor

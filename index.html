@@ -13,53 +13,64 @@
     <div class="maincontainer">
         <header class="header">
             <img src="img/mibfboll.png" alt="logga" class="logo">
-            <nav class="team">
-                <p class="navtext teamtext">Välj</p>
+            <nav class="team corners">
+                <p class="navtext teampadding">Välj</p>
                 <p class="navtext">Lag</p>
             </nav>
-            <nav class="menu">
-                <p class="navtext menutext">Meny</p>
+            <nav class="menu corners">
+                <p class="navtext menupadding">Meny</p>
             </nav>
         </header> 
 
-        <img src="img/teampicture.jpg" alt="lagbild" class="teampicture margin">
+        <img src="img/teampicture.jpg" alt="lagbild" class="teampicture margin corners">
         <section class="schedule">
-            <article class="upcomming margin">upcomming</article>
+            <article class="upcomming margin corners">upcomming</article>
             <!--<article class="past"></article>-->
         </section>
-        <table class="table margin">
-            <tr>
-                <th>Lag</th>
-                <th>M</th>
-                <th>V</th>
-                <th>F</th>
-                <th>P</th>
-            </tr>
-            <tr>
-                <td>Lag 1</td>
-                <td>m1</td>
-                <td>v1</td>
-                <td>f1</td>
-                <td>p1</td>
-            </tr>
-            <tr>
-                <td>Lag 2</td>
-                <td>m2</td>
-                <td>v2</td>
-                <td>f2</td>
-                <td>p2</td>
-            </tr>
-            <tr>
-                <td>Lag 3</td>
-                <td>m3</td>
-                <td>v3</td>
-                <td>f3</td>
-                <td>p3</td>
-            </tr>
-        </table>
-        <section class="news margin">news</section>
-        <section class="sponsors margin">sponsors</section>
-        <img src="img/sponsors.jpg" alt="sposorer" class="sponsors">
+        <a class="underlineremove" href="tabell.html">
+            <table class="table margin corners" cellspacing="0"> 
+                <tr>
+                    <th class="firstrow">Lag</th>
+                    <th>M</th>
+                    <th>V</th>
+                    <th>F</th>
+                    <th>P</th>
+                </tr>
+                <tr>
+                    <td class="firstrow">1. Mölndal IBF</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td class="firstrow">2. Lindås Waves</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td class="firstrow">3. Pixbo Wallenstam IBF</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>12</td>
+                </tr>
+            </table>
+        </a>
+        
+        <section class="news margin corners">
+            <p class="newstitle">Nyheter</p>
+            <article class="article">Här är en spännande händelse</article>
+            <article class="article">Gårdagens match</article>
+            <article class="article">Ny medlem i föreningen</article>
+        </section>
+        <img src="img/sponsors.jpg" alt="sposorer" class="sponsors corners margin">
     </div>
+
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
