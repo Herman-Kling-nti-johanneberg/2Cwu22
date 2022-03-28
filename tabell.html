@@ -5,26 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mölndal IBF</title>
+    <title>Mölndal IBF - Tabell</title>
     <link rel="stylesheet" href="css/mibf.css">
     <!--tab-icon-->
 </head>
 
 
 <body>
-    <div class="tabellcontainer">
+    <nav class="sidemenu">
+        <a class="sidearticlemenu underlineremove" href="trupp.html">Trupp</a>
+        <a class="sidearticlemenu underlineremove" href="index.html">Start</a>
+        <a class="sidearticlemenu underlineremove" href="nyhetsartikel.html">Nyheter</a>
+    </nav>
+    <div class="fadelayermenu"></div>
+
+    <nav class="sideteam">
+        <article class="sidearticleteam">Denna funktion finns ej</article>
+    </nav>
+    <div class="fadelayerteam"></div>
+
+
+    <div id="tabellcontainer">
         <header class="header">
             <a class="loggalänk" href="index.html">
                 <img src="img/mibfboll.png" alt="logga" class="logo">
             </a>
-            <nav class="team corners">
+
+            <nav class="team corners teambutton">
                 <p class="navtext teampadding">Välj</p>
                 <p class="navtext">Lag</p>
             </nav>
-            <nav class="menu corners">
+
+            <nav class="menu corners menubutton">
                 <p class="navtext menupadding">Meny</p>
             </nav>
         </header>
+
+        <section class="title corners">
+            <h2 class="titletext">Herrar Div 1 södra Götaland</h2>
+        </section>
+
         <section class="tablesection">
             <table class="margin" cellspacing="0">
                 <tr>
@@ -130,7 +150,7 @@
             </table>
         </section>
 
-        <img src="img/sponsors.jpg" alt="sposorer" class="sponsors corners margin">
+        <img src="img/sponsors.jpg" alt="sposorer" class="sponsors corners">
     </div>
 
 

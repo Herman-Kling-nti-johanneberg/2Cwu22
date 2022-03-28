@@ -1,3 +1,4 @@
+/*alla*/
 :not(tr, td, th){
     margin: 0;
     background-color: rgb(221, 60, 60);
@@ -10,15 +11,13 @@
 }
 
 .margin{
-    margin: 20px auto 0px auto;
+    margin: 20px auto 0px;
 }
-
 
 .header{
     grid-area: hd;
     background: rgb(255, 71, 71);
     display:grid;
-    height: 200px;
     grid-template-columns: 1fr 95px;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
@@ -97,6 +96,23 @@ tr:nth-child(odd){
     background-color: rgb(226, 226, 226);
 }
 
+.title{
+    grid-area: tt;
+    background: rgb(255, 95, 95);
+    color: white;
+    margin: 20px auto 0px;
+    border: 0.0625rem solid black;
+}
+
+.titletext{
+    padding: 0.75rem;
+    background: none;
+}
+
+b{
+    background: none
+}
+
 .sponsors{
     grid-area: spn;
     width: 90%;
@@ -109,8 +125,125 @@ tr:nth-child(odd){
 
 
 
+
+
+
+
+
+/*sidomeny
+meny*/
+.sidemenu{
+    position: fixed;
+    top: 25px;
+    right: -70vw;
+    width: 60vw;
+    height: 300px;
+    background: rgb(255, 71, 71);
+    transition: right 0.2s;
+    z-index: 10;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sidearticlemenu{
+    width: 40%;
+    height: 15%;
+    background: white;
+    color: black;
+    border: 0.0625rem solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fadelayermenu{
+    position: fixed;
+    height: 200vh;      /*extra hög för att det ska se bra ut även när man scrollar snabbt*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 5;
+}
+
+.fadelayermenu.visible{
+    display: block;
+}
+
+.showmenu{
+    right: 0;
+}
+
+/*lag*/
+.sideteam{
+    position: fixed;
+    top: 25px;
+    right: -70vw;
+    width: 60vw;
+    height: 100px;
+    background: rgb(255, 71, 71);
+    transition: right 0.2s;
+    z-index: 10;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sidearticleteam{
+    width: 80%;
+    height: 40%;
+    background: white;
+    color: black;
+    border: 0.0625rem solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fadelayerteam{
+    position: fixed;
+    height: 200vh;      /*extra hög för att det ska se bra ut även när man scrollar snabbt*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 5;
+}
+
+.fadelayerteam.visible{
+    display: block;
+}
+
+.showteam{
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*huvudsida*/
-.maincontainer{
+#maincontainer{
     display:grid;
     min-height: 100vh;
     grid-template-rows: 200px auto 200px 200px 200px 200px;
@@ -123,8 +256,12 @@ tr:nth-child(odd){
     "spn";
 }
 
-.teampicture{
+.teampicturelink{
     grid-area: img;
+}
+
+.teampicture{
+    margin-left: 20px;
     width: 90%;
 }
 
@@ -138,8 +275,11 @@ tr:nth-child(odd){
     height: 90%;
 }
 
-.shorttable{
+.tablelink{
     grid-area: tbl;
+}
+
+.shorttable{
     width: 90%;
     height: 90%;
     color: black;
@@ -152,9 +292,8 @@ tr:nth-child(odd){
 
 .news{
     grid-area: nws;
-    background: rgb(255, 71, 71);
+    background: rgb(255, 95, 95);
     width: 90%;
-    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -163,13 +302,16 @@ tr:nth-child(odd){
 }
 
 .article{
+    height: 20%;
     width: 90%;
     background: white;
     color: black;
     border-radius: 0.313rem;
     font-size: 1.125rem;
-    padding: 0.625rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.0625rem solid black;
 }
 
 .newstitle{
@@ -185,13 +327,28 @@ tr:nth-child(odd){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*tabell*/
-.tabellcontainer{
+#tabellcontainer{
     display:grid;
     min-height: 100vh;
-    grid-template-rows: 200px auto 200px;
+    grid-template-rows: 200px 75px auto 200px;
     grid-template-areas:
     "hd"
+    "tt"
     "tb"
     "spn";
 }
@@ -199,7 +356,7 @@ tr:nth-child(odd){
 .tablesection{
     grid-area: tb;
     width: 100%;
-    margin: 20px auto 25px auto;
+    margin: 0px auto;
     color: black;
 }
 
@@ -213,7 +370,7 @@ tr:nth-child(odd){
 }
 
 .mibftable{
-    background-color: rgb(255, 95, 95);
+    background: rgb(255, 71, 71);
     color: white;
 }
 
@@ -235,6 +392,74 @@ tr:nth-child(odd){
 
 
 
+/*trupp*/
+
+#truppcontainer{
+    display:grid;
+    min-height: 100vh;
+    grid-template-rows: 200px 170px auto 170px 200px;
+    grid-template-areas:
+    "hd"
+    "mv"
+    "us"
+    "le"
+    "spn";
+}
+
+.squadtitle{
+    color: white;
+    background: none;
+    padding: 0.188rem 0rem 0rem 0.313rem;
+}
+
+.squadarticle{
+    height: 45px;
+    width: 90%;
+    background: white;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name{
+    background: none;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+}
+
+.number{
+    background: none;
+    font-size: 1.875rem;
+    padding-right: 0.5rem;
+}
+
+.keeper{
+    grid-area: mv;
+    width: 90%;
+    background-color: rgb(255, 95, 95);
+    border: 0.0625rem solid black;
+}
+
+.player{
+    grid-area: us;
+    width: 90%;
+    background-color: rgb(255, 95, 95);
+    border: 0.0625rem solid black;
+}
+
+.coach{
+    grid-area: le;
+    width: 90%;
+    background-color: rgb(255, 95, 95);
+    border: 0.0625rem solid black;
+}
+
+.role{
+    background: none;
+    font-size: 0.938rem;
+    padding-right: 0.5rem;
+}
 
 
 
@@ -244,4 +469,55 @@ tr:nth-child(odd){
 
 
 
-/*frågor
+
+
+
+
+
+
+
+
+/*nyhet*/
+#newscontainer{
+    display:grid;
+    min-height: 100vh;
+    grid-template-rows: 200px 75px auto 200px;
+    grid-template-areas:
+    "hd"
+    "tt"
+    "at"
+    "spn";
+}
+
+.articletext{
+    grid-area: at;
+    width: 87%;
+    background: white;
+    color: black;
+    border: 0.0625rem solid black;
+    padding: 0.438rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*CSS minify
+github
+
+
+frågor
+vad ska vara rem och px marging?        border, border-radius, padding, margin, font, divstorlekt, containerbegrännslingar
+truppbild, margin auto funkar ej. spelar de nån roll?
+behöver bilder ha högre upplösning
+Vilken javascrip sak var A-betyg
+behöver jag göra en sida för flera nyheter?
+kommande och tidigare: hur ska jag göra med fliken som sticker upp (overkill)
+hur scrallar man på nuheter

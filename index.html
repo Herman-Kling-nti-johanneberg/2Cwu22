@@ -5,32 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mölndal IBF</title>
+    <title>Mölndal IBF - Hem</title>
     <link rel="stylesheet" href="css/mibf.css">
     <!--tab-icon-->
 </head>
 
 <body>
-    <div class="maincontainer">
+
+    <nav class="sidemenu">
+        <a class="sidearticlemenu underlineremove" href="trupp.html">Trupp</a>
+        <a class="sidearticlemenu underlineremove" href="tabell.html">Tabell</a>
+        <a class="sidearticlemenu underlineremove" href="nyhetsartikel.html">Nyheter</a>
+    </nav>
+    <div class="fadelayermenu"></div>
+
+    <nav class="sideteam">
+        <article class="sidearticleteam">Denna funktion finns ej</article>
+    </nav>
+    <div class="fadelayerteam"></div>
+
+
+
+
+
+    <div id="maincontainer">
         <header class="header">
             <a class="loggalänk" href="index.html">
                 <img src="img/mibfboll.png" alt="logga" class="logo">
             </a>
-            <nav class="team corners">
+
+            <nav class="team corners teambutton">
                 <p class="navtext teampadding">Välj</p>
                 <p class="navtext">Lag</p>
             </nav>
-            <nav class="menu corners">
+
+            <nav class="menu corners menubutton">
                 <p class="navtext menupadding">Meny</p>
             </nav>
         </header>
 
-        <img src="img/teampicture.jpg" alt="lagbild" class="teampicture margin corners">
+
+
+
+        <a class="teampicturelink" href="trupp.html">
+            <img src="img/teampicture.jpg" alt="lagbild" class="teampicture margin corners">
+        </a>
+
         <section class="schedule">
             <article class="upcomming margin corners">upcomming</article>
             <!--<article class="past"></article>-->
         </section>
-        <a class="underlineremove" href="tabell.html">
+
+        <a class="underlineremove tablelink" href="tabell.html">
             <table class="shorttable margin" cellspacing="0">
                 <tr>
                     <th class="shortfirstrow">Lag</th>
@@ -40,7 +66,7 @@
                     <th>P</th>
                 </tr>
                 <tr>
-                    <td class="shortfirstrow">1. Mölndal IBF</td>
+                    <td class="shortfirstrow">1. Pixbo Wallenstam IBF</td>
                     <td>8</td>
                     <td>5</td>
                     <td>2</td>
@@ -54,7 +80,7 @@
                     <td>15</td>
                 </tr>
                 <tr>
-                    <td class="shortfirstrow">3. Pixbo Wallenstam IBF</td>
+                    <td class="shortfirstrow">3. Mölndal IBF</td>
                     <td>8</td>
                     <td>4</td>
                     <td>4</td>
@@ -64,12 +90,13 @@
         </a>
 
         <section class="news margin corners">
-            <p class="newstitle">Nyheter</p>
-            <article class="article">Här är en spännande händelse</article>
-            <article class="article">Gårdagens match</article>
-            <article class="article">Ny medlem i föreningen</article>
+            <h2 class="newstitle">Nyheter</h2>
+            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
+            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
+            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
         </section>
-        <img src="img/sponsors.jpg" alt="sposorer" class="sponsors corners margin">
+
+        <img src="img/sponsors.jpg" alt="sposorer" class="sponsors corners">
     </div>
 
 
