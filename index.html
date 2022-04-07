@@ -8,98 +8,154 @@
     <title>Mölndal IBF - Hem</title>
     <link rel="stylesheet" href="css/mibf.css">
     <!--tab-icon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Open+Sans:wght@300&family=Work+Sans:wght@100&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
     <nav class="sidemenu">
         <a class="sidearticlemenu underlineremove" href="trupp.html">Trupp</a>
         <a class="sidearticlemenu underlineremove" href="tabell.html">Tabell</a>
         <a class="sidearticlemenu underlineremove" href="nyhetsartikel.html">Nyheter</a>
     </nav>
+
     <div class="fadelayermenu"></div>
 
     <nav class="sideteam">
         <article class="sidearticleteam">Denna funktion finns ej</article>
     </nav>
+
     <div class="fadelayerteam"></div>
 
 
 
 
-
-    <div id="maincontainer">
+    <div id="containerstart">
         <header class="header">
+            <h1 class="headertitle displaydesktop">Mölndal IBF</h1>
+
             <a class="loggalänk" href="index.html">
                 <img src="img/mibfboll.png" alt="logga" class="logo">
             </a>
 
-            <nav class="team corners teambutton">
+            <nav class="team corners teambutton teammenu">
                 <p class="navtext teampadding">Välj</p>
                 <p class="navtext">Lag</p>
             </nav>
 
-            <nav class="menu corners menubutton">
+            <nav class="menu corners menubutton teammenu">
                 <p class="navtext menupadding">Meny</p>
             </nav>
         </header>
 
 
+        <main id="wrapperstart">
+            <a class="teampicturelink center" href="trupp.html">
+                <img src="img/teampicture.jpg" alt="lagbild" class="teampicture  corners">
+            </a>
 
+            <section class="resultsection center ">
+                <section class="result corners displaydesktop">
+                    <h2 class="latestgame">Senaste matchen</h2>
+                    <img src="img/mibfboll.png" alt="Mölndal IBF" class="mibf">
+                    <hr class="shortline">
+                    <img src="img/pixbologo.png" alt="Pixbo Wallenstam" class="pixbo">
+                    <h3 class="mibftext">MIBF</h3>
+                    <h3 class="pixbotext">Pixbo</h3>
+                    <hr class="longline">
+                    <h3 class="resultnumbers">8 - 5</h3>
 
-        <a class="teampicturelink" href="trupp.html">
-            <img src="img/teampicture.jpg" alt="lagbild" class="teampicture margin corners">
-        </a>
+                </section>
+            </section>
 
-        <section class="schedule">
-            <article class="upcomming margin corners">upcomming</article>
-            <!--<article class="past"></article>-->
-        </section>
+            <section class="upcommingsection center">
+                <section class="upcomming corners">
+                    <h2 class="eventtitle">Händelser i veckan</h2>
+                    <section class="wrapperevents">
+                        <section class="event eventodd">
+                            <p class="eventthing">Träning</p>
+                            <p class="info">4 apr 17:00</p>
+                        </section>
+                        <section class="event eventeven">
+                            <p class="eventthing game">Pratille</p>
+                            <p class="info">6 apr 19:00</p>
+                        </section>
+                        <section class="event eventodd">
+                            <p class="eventthing">Träning</p>
+                            <p class="info">8 apr 18:00</p>
+                        </section>
+                        <section class="event eventeven">
+                            <p class="eventthing fys">Fyspass</p>
+                            <p class="info">9 apr 13:00</p>
+                        </section>
+                        <section class="event eventodd">
+                            <p class="eventthing">Träning</p>
+                            <p class="info">9 apr 17:00</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
 
-        <a class="underlineremove tablelink" href="tabell.html">
-            <table class="shorttable margin" cellspacing="0">
-                <tr>
-                    <th class="shortfirstrow">Lag</th>
-                    <th>M</th>
-                    <th>V</th>
-                    <th>F</th>
-                    <th>P</th>
-                </tr>
-                <tr>
-                    <td class="shortfirstrow">1. Pixbo Wallenstam IBF</td>
-                    <td>8</td>
-                    <td>5</td>
-                    <td>2</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td class="shortfirstrow">2. Lindås Waves</td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td class="shortfirstrow">3. Mölndal IBF</td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>12</td>
-                </tr>
-            </table>
-        </a>
+            <a class="underlineremove tablelink center" href="tabell.html">
+                <table class="shorttable" cellspacing="0">
+                    <tr>
+                        <th class="shortfirstrow">Lag</th>
+                        <th>M</th>
+                        <th>V</th>
+                        <th>F</th>
+                        <th>P</th>
+                    </tr>
+                    <tr>
+                        <td class="shortfirstrow">1. Pixbo Wallenstam IBF</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td class="shortfirstrow">2. Lindås Waves</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td class="shortfirstrow">3. Mölndal IBF</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>12</td>
+                    </tr>
+                </table>
+            </a>
 
-        <section class="news margin corners">
-            <h2 class="newstitle">Nyheter</h2>
-            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
-            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
-            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
-        </section>
+            <section class="newssection center">
+                <section class="news corners">
+                    <h2 class="newstitle">Nyheter</h2>
+                    <section class="allarticles">
+                        <article class="articlesright">
+                            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
+                            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
+                            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
+                        </article>
+                        <article class="articlesleft">
+                            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
+                            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
+                            <a class="article underlineremove" href="nyhetsartikel.html">En spännande rubrik</a>
+                        </article>
+                    </section>
+                </section>
+            </section>
 
-        <img src="img/sponsors.jpg" alt="sposorer" class="sponsors corners">
+            <section class="sponsorsection center">
+                <img src="img/sponsors.jpg" alt="sposorer" class="sponsors corners displayphone">
+                <img src="img/sponsorsdesktop.jpg" alt="sposorer" class="sponsors corners displaydesktop">
+            </section>
+        </main>
     </div>
-
-
 
     <script src="js/main.js"></script>
 </body>

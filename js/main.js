@@ -23,3 +23,15 @@ function showteam(){
     let layermenu = document.querySelector(".fadelayerteam");
     layermenu.classList.toggle("visible")
 }
+
+
+
+
+
+/*const mq = window.matchMedia( "(min-width: 960px)" );
+
+if (mq.matches) {
+       alert("window width >= 960px");
+} else {
+     alert("window width < 960px");
+}*/

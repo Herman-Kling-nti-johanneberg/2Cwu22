@@ -1,142 +1,12 @@
-/*alla*/
-:not(tr, td, th){
-    margin: 0;
-    background-color: rgb(221, 60, 60);
-}
-
-.corners{
-    border-radius: 10px;
-    /*OBS bottom-radius on header*/
-    /*articles i menyn*/
-}
-
-.margin{
-    margin: 20px auto 0px;
-}
-
-.header{
-    grid-area: hd;
-    background: rgb(255, 71, 71);
-    display:grid;
-    grid-template-columns: 1fr 95px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "lg tm"
-    "lg mu";
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.logo{
-    padding-top: 0.313rem;
-    height: 100%;
-    background: none;
-}
-
-.loggalänk{
-    grid-area: lg;
-    background: none;
-}
-
-.team{
-    grid-area: tm;
-    background: rgb(255, 95, 95);
-    height: 75px;
-    width: 75px;
-    margin: auto 10px auto 10px;
-}
-
-.menu{
-    grid-area: mu;
-    background: rgb(255, 95, 95);
-    height: 75px;
-    width: 75px;
-    margin: auto 10px auto 10px;
-    color: white;
-    font-size: 1.875rem;
-}
-
-.navtext{
-    background: none;
-    color: white;
-    font-size: 1.563rem;
-    text-align: center;
-}
-
-.teampadding{
-    padding-top: 0.438rem;
-}
-
-.menupadding{
-    padding-top: 1.063rem;
-}
-
-
-.underlineremove{
-    text-decoration: none;
-}
-
-th, td {
-    padding: 0.5rem;
-    border: 1px solid black;
-    text-align: center;
-}
-
-th{
-    background-color: rgb(151, 151, 151)
-}
-
-tr:nth-child(even){
-    /*background-color: rgb(206, 59, 59);*/
-    background-color: lightgray;
-}
-
-tr:nth-child(odd){
-    /*background: rgb(255, 71, 71);*/
-    background-color: rgb(226, 226, 226);
-}
-
-.title{
-    grid-area: tt;
-    background: rgb(255, 95, 95);
-    color: white;
-    margin: 20px auto 0px;
-    border: 0.0625rem solid black;
-}
-
-.titletext{
-    padding: 0.75rem;
-    background: none;
-}
-
-b{
-    background: none
-}
-
-.sponsors{
-    grid-area: spn;
-    width: 90%;
-    margin: 20px auto 20px auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 /*sidomeny
 meny*/
-.sidemenu{
+.sidemenu {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
     position: fixed;
     top: 25px;
-    right: -70vw;
-    width: 60vw;
+    right: -300px;
+    width: 250px;
     height: 300px;
     background: rgb(255, 71, 71);
     transition: right 0.2s;
@@ -148,7 +18,7 @@ meny*/
     align-items: center;
 }
 
-.sidearticlemenu{
+.sidearticlemenu {
     width: 40%;
     height: 15%;
     background: white;
@@ -160,9 +30,10 @@ meny*/
     align-items: center;
 }
 
-.fadelayermenu{
+.fadelayermenu {
     position: fixed;
-    height: 200vh;      /*extra hög för att det ska se bra ut även när man scrollar snabbt*/
+    height: 200vh;
+    /*extra hög för att det ska se bra ut även när man scrollar snabbt*/
     top: 0;
     left: 0;
     right: 0;
@@ -172,20 +43,24 @@ meny*/
     z-index: 5;
 }
 
-.fadelayermenu.visible{
+.fadelayermenu.visible {
     display: block;
 }
 
-.showmenu{
+.showmenu {
     right: 0;
 }
 
+
 /*lag*/
-.sideteam{
+
+.sideteam {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
     position: fixed;
     top: 25px;
-    right: -70vw;
-    width: 60vw;
+    right: -300px;
+    width: 250px;
     height: 100px;
     background: rgb(255, 71, 71);
     transition: right 0.2s;
@@ -197,7 +72,7 @@ meny*/
     align-items: center;
 }
 
-.sidearticleteam{
+.sidearticleteam {
     width: 80%;
     height: 40%;
     background: white;
@@ -209,9 +84,10 @@ meny*/
     align-items: center;
 }
 
-.fadelayerteam{
+.fadelayerteam {
     position: fixed;
-    height: 200vh;      /*extra hög för att det ska se bra ut även när man scrollar snabbt*/
+    height: 200vh;
+    /*extra hög för att det ska se bra ut även när man scrollar snabbt*/
     top: 0;
     left: 0;
     right: 0;
@@ -221,13 +97,163 @@ meny*/
     z-index: 5;
 }
 
-.fadelayerteam.visible{
+.fadelayerteam.visible {
     display: block;
 }
 
-.showteam{
+.showteam {
     right: 0;
 }
+
+
+
+
+
+
+
+/*alla*/
+.displaydesktop {
+    display: none;
+}
+
+.displayphone {
+    display: block;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+*:not(td) {
+    margin: 0;
+    background-color: rgb(221, 60, 60);
+}
+
+.corners {
+    border-radius: 10px;
+    /*OBS bottom-radius on header*/
+    /*articles i menyn*/
+}
+
+.underlineremove {
+    text-decoration: none;
+}
+
+.header {
+    grid-area: hd;
+    background: rgb(255, 71, 71);
+    display: grid;
+    grid-template-columns: 1fr 95px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "lg tm" "lg mu";
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.logo {
+    padding-top: 0.313rem;
+    height: 100%;
+    background: none;
+}
+
+.loggalänk {
+    grid-area: lg;
+    background: none;
+}
+
+.team {
+    grid-area: tm;
+    background: rgb(255, 95, 95);
+    height: 75px;
+    width: 75px;
+    margin: auto 10px auto 10px;
+    border: 0.0625rem solid black;
+}
+
+.menu {
+    grid-area: mu;
+    background: rgb(255, 95, 95);
+    height: 75px;
+    width: 75px;
+    margin: auto 10px auto 10px;
+    color: white;
+    border: 0.0625rem solid black;
+}
+
+.navtext {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    background: none;
+    color: white;
+    font-size: 1.563rem;
+    text-align: center;
+}
+
+.teampadding {
+    padding-top: 0.438rem;
+}
+
+.menupadding {
+    padding-top: 1.063rem;
+}
+
+th, td {
+    padding: 0.5rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(151, 151, 151)
+}
+
+tr:nth-child(even) {
+    /*background-color: rgb(206, 59, 59);*/
+    background-color: lightgray;
+}
+
+tr:nth-child(odd) {
+    /*background: rgb(255, 71, 71);*/
+    background-color: rgb(226, 226, 226);
+}
+
+.title {
+    grid-area: tt;
+    background: rgb(255, 95, 95);
+    color: white;
+    margin: 20px auto 0px;
+    border: 0.0625rem solid black;
+}
+
+.titletext {
+    padding: 0.75rem;
+    background: none;
+}
+
+b {
+    background: none
+}
+
+.sponsorsection {
+    grid-area: spn;
+}
+
+.sponsors {
+    width: 90%;
+    max-height: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
 
 
 
@@ -243,57 +269,140 @@ meny*/
 
 
 /*huvudsida*/
-#maincontainer{
-    display:grid;
+
+#containerstart {
+    display: grid;
     min-height: 100vh;
-    grid-template-rows: 200px auto 200px 200px 200px 200px;
-    grid-template-areas:
-    "hd"
-    "img"
-    "sdl"
-    "tbl"
-    "nws"
+    grid-template-rows: 200px auto;
+    grid-template-areas: 
+    "hd" 
+    "ws";
+}
+
+#wrapperstart {
+    grid-area: ws;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 320px 200px 200px 200px 170px;
+    grid-template-areas: 
+    "img" 
+    "sdl" 
+    "tbl" 
+    "nws" 
     "spn";
 }
 
-.teampicturelink{
+.teampicturelink {
     grid-area: img;
+    width: 100%;
 }
 
-.teampicture{
-    margin-left: 20px;
+.teampicture {
     width: 90%;
+    max-height: 100%;
 }
 
-.schedule{
+.upcommingsection {
     grid-area: sdl;
 }
 
-.upcomming{
-    background: lightgray;
+.upcomming {
+    background: rgb(255, 95, 95);
+    border: 0.0625rem solid black;
     width: 90%;
     height: 90%;
+    display: grid;
+    grid-template-rows: 40px auto;
+    grid-template-areas: "et" "we";
 }
 
-.tablelink{
+.eventtitle {
+    font-family: 'Work Sans', sans-serif;
+    background: none;
+    color: white;
+    font-size: 1.563rem;
+    grid-area: et;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperevents {
+    background: none;
+    overflow: scroll;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.event {
+    height: 54px;
+    border: 0.0625rem solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eventthing {
+    padding-left: 5px;
+    background: none;
+    font-size: 40px;
+    color: darkgreen;
+    width: 40%
+}
+
+.game {
+    color: darkorange;
+}
+
+.fys {
+    color: darkviolet;
+}
+
+.info {
+    background: none;
+    font-size: 20px;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+}
+
+.eventeven {
+    background-color: rgb(226, 226, 226);
+}
+
+.eventodd {
+    background-color: lightgray;
+}
+
+.tablelink {
     grid-area: tbl;
 }
 
-.shorttable{
+.shorttable {
     width: 90%;
     height: 90%;
     color: black;
 }
 
-.shortfirstrow{
+.shortfirstrow {
     width: 65%;
     text-align: left;
 }
 
-.news{
+.newssection {
     grid-area: nws;
+}
+
+.news {
     background: rgb(255, 95, 95);
     width: 90%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -301,9 +410,24 @@ meny*/
     border: 0.0625rem solid black;
 }
 
-.article{
-    height: 20%;
+.allarticles {
+    height: 70%;
     width: 90%;
+    overflow: scroll;
+    background: none;
+}
+
+.articlesright {
+    background: none;
+}
+
+.articlesleft {
+    background: none;
+}
+
+.article {
+    height: 45px;
+    width: 99%;
     background: white;
     color: black;
     border-radius: 0.313rem;
@@ -312,9 +436,11 @@ meny*/
     justify-content: center;
     align-items: center;
     border: 0.0625rem solid black;
+    margin-bottom: 5px;
 }
 
-.newstitle{
+.newstitle {
+    font-family: 'Work Sans', sans-serif;
     background: none;
     color: white;
     font-size: 1.563rem;
@@ -342,34 +468,49 @@ meny*/
 
 
 /*tabell*/
-#tabellcontainer{
-    display:grid;
+#containertabell {
+    display: grid;
     min-height: 100vh;
-    grid-template-rows: 200px 75px auto 200px;
-    grid-template-areas:
-    "hd"
-    "tt"
-    "tb"
+    grid-template-rows: 200px auto;
+    grid-template-areas: 
+    "hd" 
+    "wt";
+}
+
+#wrappertabell {
+    grid-area: wt;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 75px 460px 170px;
+    grid-template-areas: 
+    "tt" 
+    "tb" 
     "spn";
 }
 
-.tablesection{
+.tablesection {
     grid-area: tb;
     width: 100%;
     margin: 0px auto;
     color: black;
 }
 
-.firstrow{
-    width: auto;
-    text-align: left; 
+.table {
+    width: 90%;
+    margin-top: 10px;
 }
 
-.rest{
+.firstrow {
+    width: auto;
+    text-align: left;
+}
+
+.rest {
     width: 10%;
 }
 
-.mibftable{
+.mibftable {
     background: rgb(255, 71, 71);
     color: white;
 }
@@ -392,27 +533,37 @@ meny*/
 
 
 
-/*trupp*/
 
-#truppcontainer{
-    display:grid;
+/*trupp*/
+#containertrupp {
+    display: grid;
     min-height: 100vh;
-    grid-template-rows: 200px 170px auto 170px 200px;
-    grid-template-areas:
-    "hd"
-    "mv"
-    "us"
-    "le"
+    grid-template-rows: 200px auto;
+    grid-template-areas: 
+    "hd" 
+    "wtr";
+}
+
+#wrappertrupp {
+    grid-area: wtr;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 170px 1160px 170px 170px;
+    grid-template-areas: 
+    "mv" 
+    "us" 
+    "le" 
     "spn";
 }
 
-.squadtitle{
+.squadtitle {
     color: white;
     background: none;
     padding: 0.188rem 0rem 0rem 0.313rem;
 }
 
-.squadarticle{
+.squadarticle {
     height: 45px;
     width: 90%;
     background: white;
@@ -422,44 +573,64 @@ meny*/
     align-items: center;
 }
 
-.name{
+.name {
     background: none;
     font-size: 1.25rem;
     padding: 0.5rem;
 }
 
-.number{
+.number {
     background: none;
     font-size: 1.875rem;
     padding-right: 0.5rem;
 }
 
-.keeper{
+.keeper {
     grid-area: mv;
     width: 90%;
     background-color: rgb(255, 95, 95);
     border: 0.0625rem solid black;
 }
 
-.player{
+.player {
     grid-area: us;
     width: 90%;
     background-color: rgb(255, 95, 95);
     border: 0.0625rem solid black;
 }
 
-.coach{
+.coach {
     grid-area: le;
     width: 90%;
     background-color: rgb(255, 95, 95);
     border: 0.0625rem solid black;
 }
 
-.role{
+.role {
     background: none;
     font-size: 0.938rem;
     padding-right: 0.5rem;
 }
+
+.rightleft{
+    background: none;
+}
+
+.right {
+    background: none;
+}
+
+.left {
+    background: none;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -478,18 +649,29 @@ meny*/
 
 
 /*nyhet*/
-#newscontainer{
-    display:grid;
+
+#containernews {
+    display: grid;
     min-height: 100vh;
-    grid-template-rows: 200px 75px auto 200px;
-    grid-template-areas:
-    "hd"
-    "tt"
-    "at"
+    grid-template-rows: 200px auto;
+    grid-template-areas: 
+    "hd" 
+    "wn";
+}
+
+#wrappernews {
+    grid-area: wn;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 75px 620px 170px;
+    grid-template-areas: 
+    "tt" 
+    "at" 
     "spn";
 }
 
-.articletext{
+.articletext {
     grid-area: at;
     width: 87%;
     background: white;
@@ -509,15 +691,483 @@ meny*/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:501px) {
+    /*alla*/
+    .displaydesktop {
+        display: block
+    }
+    .displayphone {
+        display: none;
+    }
+    .center {
+        display: block;
+    }
+    .teammenu {
+        margin-left: 255px;
+    }
+    .header {
+        display: grid;
+        grid-area: hd;
+        grid-template-columns: 340px 1fr 340px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "lg ht tm" "lg ht mu";
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .headertitle {
+        grid-area: ht;
+        background: none;
+        color: white;
+        font-size: 6vw;
+        font-family: 'Heebo', sans-serif;
+        padding-top: 2.188rem;
+        text-align: center
+    }
+    .sponsorsection{
+        grid-area: spn;
+    }
+    .sponsors{
+        height: 100%;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*huvudsida*/
+    #containerstart {
+        overflow-x: hidden;
+    }
+    #wrapperstart {
+        grid-template-rows: 395px 250px 75px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img rt sdl" 
+        "nws nws tbl" 
+        "spn spn spn";
+        margin: 20px;
+    }
+    .result {
+        grid-area: rt;
+        background: rgb(255, 95, 95);
+        border: 0.0625rem solid black;
+        height: 90%;
+        width: 90%;
+        display: grid;
+        grid-template-rows: 75px 1fr 40px 5px 120px;
+        grid-template-columns: 1.5fr 1fr 1.5fr;
+        grid-template-areas: "rt rt rt" "ml sl pl" "mt . pt" "ll ll ll" "rn rn rn";
+    }
+    .latestgame {
+        margin: auto;
+        grid-area: rt;
+        background: none;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 2.188rem;
+        font-weight: 600;
+        color: white;
+    }
+    .mibf {
+        grid-area: ml;
+        background: none;
+        width: 140%;
+    }
+    .shortline {
+        margin: auto;
+        grid-area: sl;
+        background: none;
+        border: none;
+        border-top: 3px solid black;
+        width: 30px;
+    }
+    .pixbo {
+        grid-area: pl;
+        background: none;
+        width: 90%;
+    }
+    .mibftext {
+        grid-area: mt;
+        background: none;
+        margin: auto;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 35px;
+        font-weight: 600;
+        color: white;
+    }
+    .pixbotext {
+        grid-area: pt;
+        background: none;
+        margin: auto;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 2.188rem;
+        font-weight: 600;
+        color: white;
+    }
+    .longline {
+        grid-area: ll;
+        background: none;
+        border: none;
+        border-top: 3px solid black;
+        width: 90%;
+        margin: auto;
+    }
+    .resultnumbers {
+        grid-area: rn;
+        background: none;
+        margin: auto;
+        margin-top: 5px;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        color: white;
+    }
+    .news {
+        width: 95%;
+    }
+    .allarticles {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: space-evenly;
+        background: none;
+        overflow: hidden;
+    }
+    .articlesright {
+        margin-right: 5px;
+        width: 45%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-evenly;
+    }
+    .articlesleft {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-evenly;
+        background: none;
+    }
+    .wrapperevents {
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .eventtitle {
+        margin-top: 5px;
+    }
+
+
+
+
+
+
+
+    /*Trupp*/
+    #containertrupp {
+        min-height: 127vh;
+    }
+    #wrappertrupp{
+        grid-template-rows: 125px 120px 380px 75px;
+        grid-template-areas: 
+        "mv us"
+        "le us" 
+        "img us"
+        "spn spn";
+    }
+    .squadtitle {
+        color: white;
+        background: none;
+        padding: 0.188rem 0rem 0rem 0.313rem;
+    }
+    .name {
+        background: none;
+        font-size: 1.25rem;
+        padding: 0.5rem;
+    }
+    .number {
+        background: none;
+        font-size: 1.875rem;
+        padding-right: 0.5rem;
+    }
+    .keeper {
+        margin-top: 20px;
+        margin-left: 40px;
+        grid-area: mv;
+        width: 90%;
+        background-color: rgb(255, 95, 95);
+        border: 0.0625rem solid black;
+    }   
+    .player {
+        margin-top: 20px;
+        margin-left: 20px;
+        grid-area: us;
+        width: 90%;
+        background-color: rgb(255, 95, 95);
+        border: 0.0625rem solid black;
+    }   
+    .coach {
+        margin-top: 20px;
+        margin-left: 40px;
+        grid-area: le;
+        width: 90%;
+        background-color: rgb(255, 95, 95);
+        border: 0.0625rem solid black;
+    }   
+    .role {
+        background: none;
+        font-size: 0.938rem;
+        padding-right: 0.5rem;
+    }
+    .rightleft{
+        background: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }    
+    .right {
+        background: none;
+        width: 50%;
+    }
+    .left {
+        background: none;
+        width: 50%;
+    }
+    .teampicturetrupp{
+        grid-area: img;
+        height: 90%;
+        margin: auto;
+        margin-top: 23px;
+    }   
+    .sponsorstrupp{
+        margin-left: 75px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*tabell*/
+    #containertabell {
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: 200px auto;
+        grid-template-areas: 
+        "hd" 
+        "wt";
+    }
+    
+    #wrappertabell{
+        display: grid;
+        grid-template-rows: 75px auto;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-areas:  
+        ". tt ."
+        "st tb sv";
+    }
+
+    .tablesection {
+        grid-area: tb;
+        width: 100%;
+        color: black;
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+
+    .table{
+        height: 90%;
+        margin-bottom: 20px;
+    }
+
+    .statisticssection{
+        grid-area: st;
+        height: 100%;
+        width: 100%;
+        background: none;
+    }
+
+    .statistics{
+        margin: auto;
+        margin-top: 20px;
+        height: 90%;
+        width: 90%;
+        background: rgb(255, 95, 95);
+        border: 0.0625rem solid black;
+        display: grid;
+        grid-template-rows: 50px auto;
+        grid-template-areas: "statt" "sta";    
+    }
+
+    .statistiktitle{
+        font-family: 'Work Sans', sans-serif;
+        background: none;
+        color: white;
+        font-size: 1.563rem;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .statistikall{
+        grid-area: sta;
+        margin: auto;
+        margin-top: 0px;
+        background: none;
+        height: 95%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .numbers{
+        background: none;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .what{
+        background: none;
+        
+    }
+
+    .line{
+        background: none;
+        border: none;
+        border-top: 3px solid black;
+        width: 90%;
+        margin: auto;
+    }
+
+    .sponsorsverticalsection{
+        grid-area: sv;
+        height: 100%;
+        background: none;
+    }
+
+    .sponsorsvertical{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .remove{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*CSS minify
 github
+photoshop
+font-family
 
 
 frågor
-vad ska vara rem och px marging?        border, border-radius, padding, margin, font, divstorlekt, containerbegrännslingar
-truppbild, margin auto funkar ej. spelar de nån roll?
-behöver bilder ha högre upplösning
-Vilken javascrip sak var A-betyg
-behöver jag göra en sida för flera nyheter?
-kommande och tidigare: hur ska jag göra med fliken som sticker upp (overkill)
-hur scrallar man på nuheter
+vad ska vara rem och px marging?                            padding, text
+behöver bilder ha högre upplösning                          ja
+hur mycket behöver vara klart till denna inlämmningen       allt
+
+
+
+
+
+
+
+*/
