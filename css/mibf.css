@@ -131,8 +131,6 @@ meny*/
 
 .corners {
     border-radius: 10px;
-    /*OBS bottom-radius on header*/
-    /*articles i menyn*/
 }
 
 .underlineremove {
@@ -176,7 +174,7 @@ meny*/
     height: 75px;
     width: 75px;
     margin: auto 10px auto 10px;
-    color: white;
+    color: black;
     border: 0.0625rem solid black;
 }
 
@@ -184,7 +182,7 @@ meny*/
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     background: none;
-    color: white;
+    color: black;
     font-size: 1.563rem;
     text-align: center;
 }
@@ -220,7 +218,7 @@ tr:nth-child(odd) {
 .title {
     grid-area: tt;
     background: rgb(255, 95, 95);
-    color: white;
+    color: black;
     margin: 20px auto 0px;
     border: 0.0625rem solid black;
 }
@@ -320,7 +318,7 @@ b {
 .eventtitle {
     font-family: 'Work Sans', sans-serif;
     background: none;
-    color: white;
+    color: black;
     font-size: 1.563rem;
     grid-area: et;
     width: 100%;
@@ -357,7 +355,7 @@ b {
 }
 
 .game {
-    color: darkorange;
+    color: darkred;
 }
 
 .fys {
@@ -388,6 +386,7 @@ b {
     width: 90%;
     height: 90%;
     color: black;
+    border-spacing: 0px;
 }
 
 .shortfirstrow {
@@ -442,7 +441,7 @@ b {
 .newstitle {
     font-family: 'Work Sans', sans-serif;
     background: none;
-    color: white;
+    color: black;
     font-size: 1.563rem;
 }
 
@@ -499,6 +498,7 @@ b {
 .table {
     width: 90%;
     margin-top: 10px;
+    border-spacing: 0px;
 }
 
 .firstrow {
@@ -512,7 +512,8 @@ b {
 
 .mibftable {
     background: rgb(255, 71, 71);
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 
 
@@ -558,7 +559,7 @@ b {
 }
 
 .squadtitle {
-    color: white;
+    color: black;
     background: none;
     padding: 0.188rem 0rem 0rem 0.313rem;
 }
@@ -649,7 +650,6 @@ b {
 
 
 /*nyhet*/
-
 #containernews {
     display: grid;
     min-height: 100vh;
@@ -664,7 +664,7 @@ b {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-rows: 75px 1220px 170px;
+    grid-template-rows: 75px auto 170px;
     grid-template-areas: 
     "tt" 
     "at" 
@@ -674,10 +674,17 @@ b {
 .articletext {
     grid-area: at;
     width: 87%;
+    height: 1135px;
     background: white;
     color: black;
     border: 0.0625rem solid black;
-    padding: 0.438rem;
+    padding: 1.25rem;
+    line-height: 1.875rem;
+    margin-top: 1.25rem;
+}
+
+#underrubrik{
+    font-size: 20px;
 }
 
 
@@ -744,7 +751,7 @@ b {
     .headertitle {
         grid-area: ht;
         background: none;
-        color: white;
+        color: black;
         font-size: 6vw;
         font-family: 'Heebo', sans-serif;
         padding-top: 2.188rem;
@@ -804,7 +811,7 @@ b {
         font-family: 'Work Sans', sans-serif;
         font-size: 2.188rem;
         font-weight: 600;
-        color: white;
+        color: black;
     }
     .mibf {
         grid-area: ml;
@@ -831,7 +838,7 @@ b {
         font-family: 'Work Sans', sans-serif;
         font-size: 35px;
         font-weight: 600;
-        color: white;
+        color: black;
     }
     .pixbotext {
         grid-area: pt;
@@ -840,7 +847,7 @@ b {
         font-family: 'Work Sans', sans-serif;
         font-size: 2.188rem;
         font-weight: 600;
-        color: white;
+        color: black;
     }
     .longline {
         grid-area: ll;
@@ -858,7 +865,7 @@ b {
         font-family: 'Work Sans', sans-serif;
         font-size: 50px;
         font-weight: 600;
-        color: white;
+        color: black;
     }
     .news {
         width: 95%;
@@ -868,7 +875,6 @@ b {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: space-evenly;
         background: none;
         overflow: hidden;
     }
@@ -879,14 +885,12 @@ b {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: space-evenly;
     }
     .articlesleft {
         width: 45%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: space-evenly;
         background: none;
     }
     .wrapperevents {
@@ -916,7 +920,7 @@ b {
         "spn spn";
     }
     .squadtitle {
-        color: white;
+        color: black;
         background: none;
         padding: 0.188rem 0rem 0rem 0.313rem;
     }
@@ -1039,7 +1043,7 @@ b {
     .statistiktitle{
         font-family: 'Work Sans', sans-serif;
         background: none;
-        color: white;
+        color: black;
         font-size: 1.563rem;
         margin: auto;
         margin-bottom: 10px;
@@ -1062,7 +1066,7 @@ b {
         font-family: 'Work Sans', sans-serif;
         font-size: 60px;
         font-weight: 600;
-        color: white;
+        color: black;
     }
 
     .what{
@@ -1106,8 +1110,8 @@ b {
         grid-area: wn;
         display: grid;
         width: 100%;
-        height: 105%;
-        grid-template-rows: 75px 510px 85px;
+        height: 100%;
+        grid-template-rows: 75px auto 85px;
         grid-template-areas: 
         "tt" 
         "at" 
@@ -1115,6 +1119,7 @@ b {
     }
 
     .articletext{
+        height: 450px;
         margin: auto;
         margin-top: 20px;
     }
@@ -1122,68 +1127,6 @@ b {
     .sponsorsnews{
         height:100%;
         margin: auto;
-        margin-top: 10px;
+        margin-top: 20px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*CSS minify
-github
-photoshop
-font-family
-
-
-frågor
-vad ska vara rem och px marging?                            padding, text
-behöver bilder ha högre upplösning                          ja
-hur mycket behöver vara klart till denna inlämmningen       allt
-
-
-
-
-
-
-
-*/
